@@ -9,6 +9,8 @@
     --layout-imagen-width:154px;
     --layout-imagen-height:211px;
 
+    --layout-image-width-detail:100%;
+    --layout-image-height-detail:392px;
 }
 @font-face {
     font-family: "EncodeSans-Regular";

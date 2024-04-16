@@ -36,15 +36,12 @@ header{
     object-fit: cover;
 }
 
-<<<<<<< HEAD
-=======
 .nav__ul > li a{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
->>>>>>> 96826e1 (chore: :lipstick: Personalizacion del eccomer.)
 .nav{
     padding: var(--space-layout-padding-lr);
     display: flex;
@@ -96,14 +93,6 @@ header{
     padding: var(--space-layout-padding-lr);
     margin-top: 15px;
 }
-<<<<<<< HEAD
-    
-.main__nav{
-    padding: 10px;
-}
-
-.nav__ul{
-=======
 /* .main__nav {
     /* background: violet; */
     /* padding: 10px; */
@@ -111,7 +100,6 @@ header{
 .nav__ul {
     /* background: darkgrey; */
     height: 55px;
->>>>>>> 96826e1 (chore: :lipstick: Personalizacion del eccomer.)
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -140,10 +128,6 @@ header{
 }
 
 .nav__ul li a:hover{
-<<<<<<< HEAD
-    transition: 0.2s;
-    filter: invert(1);
-=======
     filter:invert(1) ;
     transform: scale(1.1);
     /* z-index: 5; */
@@ -248,7 +232,6 @@ header{
     margin-top: -54px;
     /* background: rebeccapurple; */
 
->>>>>>> 96826e1 (chore: :lipstick: Personalizacion del eccomer.)
 }
 
 
@@ -258,10 +241,6 @@ header{
     bottom: 0%;
     width: 100%;
     padding: var(--space-layout-padding-lr);
-<<<<<<< HEAD
-=======
-
->>>>>>> 96826e1 (chore: :lipstick: Personalizacion del eccomer.)
 }
 
 .footer__ul{
@@ -284,15 +263,12 @@ header{
     justify-content: center;
 }
 .footer__ul li a{
-<<<<<<< HEAD
-=======
     display: flex;
 }
 
 
 .footer__ul li a img{
     height: 25px;
->>>>>>> 96826e1 (chore: :lipstick: Personalizacion del eccomer.)
     width: 25px;
     height: 25px;
 }
@@ -300,7 +276,7 @@ header{
 .main__article{
     height: 70vh;
     margin-top: 15px;
-    background: red;
+    /* background: red; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -311,7 +287,7 @@ header{
 .main__article section{
     display: flex;
     justify-content: center;
-    background: green ;
+    /* background: green ; */
     width: 48%;
     height: 290px;
     margin-bottom: 4%;
@@ -319,17 +295,17 @@ header{
 
 .main__article section:nth-child(4n+1),
 .main__article section:nth-child(4n+4){
-    background: orange ;
+    /* background: orange ; */
     height: 260px;
 }
 
 
 .main__article section:nth-child(4n-1){
-    background: violet;
+    /* background: violet; */
     margin-top:-30px ;
 }    
 .section__front_page{
-    background-color: blue;
+    /* background-color: blue; */
     position: relative;
     margin-top: 5px;
     border-radius: 10px;

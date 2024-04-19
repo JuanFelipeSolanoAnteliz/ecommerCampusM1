@@ -5,3 +5,41 @@
     font-family: "EncodeSans-Regular";
     box-sizing: border-box;
 }
+.main{
+    background: red;
+    padding: var(--space-layout-padding-t);
+}
+
+.main__section{
+    width: 100%;
+    background: green;
+}
+
+.article__product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+.product__image{
+    background: blue;
+    width: var(--layout-image-width-detail);
+    height: var(--layout-image-height-detail);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.product__image img{
+    width: var(--layout-image-width-detail);
+    height: var(--layout-image-height-detail);
+    object-fit: cover;
+}
+
+.product__menu{
+    width: 100%;
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px 0 15px;
+}
+

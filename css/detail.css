@@ -7,7 +7,8 @@
 }
 .main{
     background: red;
-    padding: var(--space-layout-padding-t);
+    padding: var(--space-layout-padding-lr);
+    margin-top: var(--space-layout-padding-t);
 }
 
 .main__section{

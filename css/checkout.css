@@ -5,129 +5,250 @@
     font-family: "EncodeSans-Regular";
     box-sizing: border-box;
 }
-
-.header{
-    /* background-color: red; */
-    padding: var(--space-layout-padding-lr);
+.header {
+    /* background: red; */
+    /* padding: var(--space-layout-padding-lr); */
 }
-
 .header__nav {
     /* background: violet; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px 15px 0 15px;
+    padding: 15px 15px 0 15px;
 }
-
 .header__nav div:nth-child(2){
-    font-family: "EncodeSans-Semibold";
+    font-family: "EncodeSans-SemiBold";
 }
 
-.main{
+
+
+.main {
     /* background: red; */
     padding: var(--space-layout-padding-lr);
 }
-
-.checkout__detail {
-    /* background: blue; */
-    /* margin: 15px 0; */
+.checkout__details {
+    /* background: green; */
+    margin-top: 20px;
     height: 275px;
     overflow-y: scroll;
 
+    /* padding-top: 15px; */
 }
-
-.details__product{
+.details__product {
     /* background: green; */
-    /* padding: 10px 0; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 0;
-    border-bottom-width:1px ;
-    border-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
     border-bottom-color: var(--color-3);
-
 }
-
-
-.product__image {
+.product__imagen {
     /* background: maroon; */
-    width: var(--layout-image-width-checkout);
-    height: var(--layout-image-height-checkout);
+    width: var( --layout-imagen-width-checkout);
+    height: var(--layout-imagen-height-checkout);
 }
-
-.product__image img{
-    width: var(--layout-image-width-checkout);
-    height: var(--layout-image-height-checkout);
+.product__imagen img{
+    width: var( --layout-imagen-width-checkout);
+    height: var(--layout-imagen-height-checkout);
     border-radius: 15px;
     object-fit: cover;
-    
 }
-
-.product__description{
-    /* background-color: violet; */
+.product__description {
     position: relative;
+    /* background: violet; */
     display: flex;
     flex-direction: column;
     width: 50%;
 }
-
 .product__description h3{
     font-size: 1em;
-    font-family: "EncodeSans-semiBold";
+    font-family: "EncodeSans-SemiBold";
 }
-
 .product__description small{
-    margin-top: 2px ;
+    margin-top: 2px;
     color: var(--color-3);
 }
-
 .product__description span{
-    font-family: "EncodeSans-semiBold";
+    font-family: "EncodeSans-SemiBold";
     position: absolute;
-    bottom:0;
-    font: .9em;
-
+    bottom: 0;
+    font-size: .9em;
 }
-
-.product__custom{
+.product__custom {
     /* background: salmon; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
-
-.product__custom div:first-child{
-    position: absolute;
-    right: 0;
-}
-
-.product__custom > img {
-    /* padding: 0 5px; */
-    width: 35%;
+.product__custom > img{
+    /* padding: 5px 5px; */
+    width: 35px;
     align-self: flex-end;
     object-fit: scale-down;
-    /* background: red ; */
+    /* background: orange; */
 }
-
-
-.product__select {
+.product__select{
+    
     display: flex;
     justify-content: space-evenly;
-    align-content: center;
+    align-items: center;
     background: var(--color-4);
     color: var(--color-5);
     width: 90px;
     height: 28px;
-    /* gap: 15px; */
-    /* padding: 5px 5px; */
     border-radius: 5px;
 }
 .product__select img{
-    /* background: red; */
     height: 20px;
     width: 20px;
+}
+
+.section__shopping{
+    /* background-color: red; */
+    margin-top: 30px;
+}
+
+.shoppig__title{
+    /* background-color: blue; */
+    margin-top: 10px ;
+
+}
+.section__card{
+    /* background: red; */
+    margin-top: 15px;
+}
+
+.dropbtn{
+    background-color: var(--color-3);
+    border-radius: 5px;
+    width: 100%;
+    color: var(--color-1);
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shopping__card{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* .shopping__card img{
+
+} */
+
+.dropdown{
+    position:relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown__content{
+    display: none;
+    position: absolute;
+    background-color: var(--color-5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 
 }
 
+.dropdown__content div:last-child{
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.dropdown__content div{
+    color: var(--color-1);
+    padding: 12px 16px;
+    display: block;
+
+}
+
+.dropdown__content div:hover{
+    background-color: var(--color-1);
+    color: var(--color-5);
+    cursor: pointer;
+
+}
+
+.dropdown:hover .dropdown__content{
+    display: block;
+    width: 100%;
+}
+
+.dropdown:hover .dropbtn{
+    background-color: var(--color-1);
+    color: var(--color-5);
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+}
+
+.dropdown:hover .dropbtn .shopping__options{
+    filter: invert(1);
+}
+
+.section__bill{
+    margin-top: 25px;
+}
+.section__bill span{
+    font-family: "EncodeSans-Semibold";
+}
+.bill__total{
+    /* background: blue; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.bill__fee{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color:var(--color-3) ;
+}
+
+.bill__subtotal{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.footer{
+
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    padding: var(--space-layout-padding-lr);
+ 
+}
+.footer__ul{
+    background: var(--color-4);
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.footer__ul li{
+    list-style: none;
+    display: flex;
+}
+
+.footer__ul li span{
+    color: var(--color-5);
+    font-family:"EncodeSans-Bold" ;
+}

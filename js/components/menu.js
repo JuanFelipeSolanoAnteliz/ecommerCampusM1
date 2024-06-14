@@ -1,10 +1,10 @@
-export const menuListCategoryIndex = async(res)=>{
+export const menuListCategoryIndex = (res)=>{
     let {data} = res;
     let plantilla = "";
-    data.array.forEach((value, index) => {
+    data.forEach((value, index) => {
         plantilla += /*html*/`
         <li title="${value.name}">
-            <a href="#" >
+            <a href="?id=${value.id}" >
                 <img src="storage/img/category.svg" >
                 <span>${value.name}</span>
             </a>
@@ -12,4 +12,4 @@ export const menuListCategoryIndex = async(res)=>{
         `;
     });
     return plantilla;
-};
+}

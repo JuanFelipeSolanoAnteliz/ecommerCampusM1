@@ -38,6 +38,11 @@
     align-items: center;
 }
 
+.nav__ul li a span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .nav{
     /* background: red; */
     padding: var(--space-layout-padding-lr);

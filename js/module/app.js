@@ -9,7 +9,7 @@ export const getAllProductName = async({search:text, id:idCategory})=>{
         headers
     };
     let res = await fetch(url, options);
-    let data = res.json();
+    let data = await res.json();
     return data;
 }
 

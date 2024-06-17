@@ -23,17 +23,22 @@
     position: relative;
 }
 .product__image{
-    /* background: blue; */
+    background: blue;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: scroll;
     width: var(--layout-image-width-detail);
     height: var(--layout-image-height-detail);
     border-radius: 20px;
-    overflow: hidden;
-}
-
-.product__image img{
+    }
+    
+    .product__image img{
+    /* flex: 1; */
+    /* flex-shrink: 1; */
     width: var(--layout-image-width-detail);
     height: var(--layout-image-height-detail);
-    object-fit: cover;
+    object-fit: contain;
 
 }
 

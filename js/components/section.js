@@ -6,9 +6,9 @@ export const titleProductDetail = async ({data:dataUpdate}=res)=>{
         <div class="detail__head">
             <h1>${dataUpdate.product_title}</h1>
             <div class="product__select">
-                <img src="../storage/img/minus.svg" alt="">
-                <span>1</span>
-                <img src="../storage/img/plus.svg" alt="">
+                <img id="plusCounter" src="../storage/img/minus.svg" alt="">
+                <span id="units">1</span>
+                <img id="minusCounter" src="../storage/img/plus.svg" alt="">
             </div>
         </div>
     <div class="detail__score">
@@ -18,3 +18,5 @@ export const titleProductDetail = async ({data:dataUpdate}=res)=>{
     </div>
     </article>`;
 };
+
+

@@ -37,12 +37,12 @@ export const galleryCheckout = async (info) =>{
     return plantilla;
 };
 
-export const pricesCheckout = async ()=>{
+export const pricesCheckout = async (sumaPrecios)=>{
     let plantilla='' 
     plantilla += /*html*/`
                 <div class="bill__total">
                     <label id="items" >Total (9 items)</label>
-                    <span id="acumulative__price" >$131.97</span>
+                    <span id="acumulative__price" >${sumaPrecios}</span>
                 </div>
                 <div class="bill__fee">
                     <label for="">Shipping fee</label>
@@ -50,7 +50,7 @@ export const pricesCheckout = async ()=>{
                 </div>
                 <div class="bill__subtotal">
                     <label for="">Sub total</label>
-                    <span id="sub__total">$131.97</span>
+                    <span id="sub__total">${sumaPrecios}</span>
                 </div>`;
     return plantilla
 }

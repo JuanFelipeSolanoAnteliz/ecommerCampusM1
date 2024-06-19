@@ -1,4 +1,14 @@
 
+export const headerCheckout = async () =>{
+    let plantilla = /*html*/`<div>
+                    <a id="back" href="detail.html${location.search}">
+                    
+                    <img src="../storage/img/back.svg">
+                </a>
+            </div> `
+    return plantilla
+};
+
 export const galleryCheckout = async (info) =>{
     let plantilla = '';
     info.forEach(element => {
@@ -17,7 +27,7 @@ export const galleryCheckout = async (info) =>{
                 <img src="../storage/img/option (1).svg">
                 <div id="buttoms__details__checkout" class="product__select">
                     <img id="minus__checkout" src="../storage/img/minusCheckout .svg">
-                    <span>4</span>
+                    <span id="counter">1</span>
                     <img id="plus__Checkout" src="../storage/img/plusCheckout.svg">
                 </div>
             </div>
@@ -26,3 +36,22 @@ export const galleryCheckout = async (info) =>{
     });
     return plantilla;
 };
+
+export const pricesCheckout = async ()=>{
+    let plantilla='' 
+    plantilla += /*html*/`
+                <div class="bill__total">
+                    <label id="items" >Total (9 items)</label>
+                    <span id="acumulative__price" >$131.97</span>
+                </div>
+                <div class="bill__fee">
+                    <label for="">Shipping fee</label>
+                    <span>$0.00</span>
+                </div>
+                <div class="bill__subtotal">
+                    <label for="">Sub total</label>
+                    <span id="sub__total">$131.97</span>
+                </div>`;
+    return plantilla
+}
+

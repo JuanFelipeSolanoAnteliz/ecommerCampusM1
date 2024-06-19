@@ -49,7 +49,7 @@ addEventListener("DOMContentLoaded", async (e) =>{
                     units.textContent = quantity; // Actualiza el texto de unidades
     
                     total__price.innerHTML = /*html*/ `
-                        <span id="total__price">add to cart | $${numberPrice * quantity} <sub>$${originalPrice * quantity}</sub></span>
+                        <span id="total__price">add to cart | ${numberPrice * quantity} <sub>${originalPrice * quantity}</sub></span>
                     `;
                 } else {
                     console.log("si")
@@ -61,7 +61,7 @@ addEventListener("DOMContentLoaded", async (e) =>{
                     units.textContent = quantity; // Actualiza el texto de unidades
     
                     total__price.innerHTML = /*html*/ `
-                        <span id="total__price">add to cart | $${numberPrice * quantity}</span>
+                        <span id="total__price">add to cart | ${numberPrice * quantity}</span>
                     `;
                 }
             }
@@ -81,7 +81,7 @@ minusCounter.addEventListener('click',async (e)=>{
                 units.textContent = quantity - 1;
                 quantity = parseInt(units.textContent);
                 total__price.innerHTML = /*html*/`
-                <span id="total__price" >add to car | $${numberPrice*quantity} <sub>$${originalprice*quantity}</sub></span>
+                <span id="total__price" >add to car | ${numberPrice*quantity} <sub>${originalprice*quantity}</sub></span>
                 `;
             }else{
                 if(quantity>=1){
@@ -89,7 +89,7 @@ minusCounter.addEventListener('click',async (e)=>{
                     quantity = parseInt(units.textContent - 1);
 
                     total__price.innerHTML = /*html*/`
-                    <span id="total__price" >add to car | $${numberPrice*quantity}</span>
+                    <span id="total__price" >add to car | ${numberPrice*quantity}</span>
                     `;
                 };
             }
@@ -97,7 +97,7 @@ minusCounter.addEventListener('click',async (e)=>{
             units.textContent = quantity - 1;}
 
             total__price.innerHTML = /*html*/`
-                    <span id="total__price" >add to car | $${numberPrice*quantity}</span>
+                    <span id="total__price" >add to car | ${numberPrice*quantity}</span>
                     `;
         };
     };

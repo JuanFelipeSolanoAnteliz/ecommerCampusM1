@@ -27,7 +27,7 @@ export const priceDetails = async({data: dataUpdate} = res) => {
     `<li>    
     <a href="checkout.html?id=${dataUpdate.asin}">
         <img src="../storage/img/shopping-cart.svg">
-        <span id= "total__price" >Add to Cart $${dataUpdate.product_price}<del><sub>$${dataUpdate.product_original_price}</sub></del></span>
+        <span id= "total__price" >Add to Cart ${dataUpdate.product_price}<del><sub>${dataUpdate.product_original_price}</sub></del></span>
     </a>
 </li>
 `;

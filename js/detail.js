@@ -5,6 +5,7 @@ import {getProductId} from "./module/detail.js";
 import {contentTitle} from "./components/descriptions.js";
 import {priceDetails} from "./components/detailfooter.js";
 
+// console.log(await getFromLocal());
 
 let main__section_gallery  = document.querySelector("#main__section_gallery");
 let main__section__title = document.querySelector("#main__section__title");
@@ -17,10 +18,16 @@ addEventListener("DOMContentLoaded", async (e) =>{
     if(!localStorage.getItem(id)) localStorage.setItem(id, JSON.stringify(await getProductId({id})));
     
     let info = JSON.parse(localStorage.getItem(id));
+    console.log(info)
     main__section_gallery.innerHTML = await galleryCategory(info);
     main__section__title.innerHTML = await titleProductDetail(info);
     main__section__description.innerHTML = await contentTitle(info);
     footer__detail.innerHTML= await priceDetails(info);
+
+    footer__detail.addEventListener('click', async (e)=>{
+        sessionStorage.setItem(location.search, localStorage.getItem(id));
+        console.log('si');
+    })
 
     let plusCounter = document.querySelector("#plusCounter");
     let minusCounter = document.querySelector("#minusCounter");

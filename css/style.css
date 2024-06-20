@@ -29,7 +29,7 @@
 }
 .header__login img{
     width: 100%;
-    /* object-fit: contain; */
+    object-fit: scale-down;
 }
 
 .nav__ul > li a{
@@ -127,8 +127,10 @@
 }
 
 .nav__ul li a:hover{
-    filter:invert(1) ;
+    /* filter:invert(1) ; */
     transform: scale(1.1);
+    color: var(--color-3);
+    background: linear-gradient(to right bottom, #801336, #2d132c);
     /* z-index: 5; */
 
 }
@@ -244,7 +246,7 @@
 
 }
 .footer__ul{
-    background: var(--color-4);
+    background: linear-gradient(to right bottom, #801336, #2d132c);
     height: 55px;
     display: flex;
     flex-direction: row;

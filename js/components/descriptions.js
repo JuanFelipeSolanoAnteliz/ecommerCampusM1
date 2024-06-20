@@ -9,13 +9,19 @@ let detailedDescription = async ()=>{
     }
     if(descriptionContent.length > 150){    
         return /*html*/`<article class="product__information">
-                            <p>${letters.substring(0,150)}... 
-                            <strong> Read more...</strong></p>
+                            <p id='product__descripcion' >${letters.substring(0,150)} 
+                            <strong id='read__more' >... Read more</strong></p>
                         </article>`;
+    }else if(descriptionContent === null){
+        return/*html*/`<article class="product__information">
+                            <p>0</p>
+                        </article>`
     }
-    else {return/*html*/`<article class="product__information">
+    else {
+        return/*html*/`<article class="product__information">
                             <p>${letters}</p>
-                        </article>`}
+                        </article>`
+                    }
     }
     return await detailedDescription();
 };

@@ -103,6 +103,11 @@ minusCounter.addEventListener('click',async (e)=>{
     };
 });
 
+let read__more = document.querySelector("#read__more")
+read__more.addEventListener('click', async()=>{
+    product__descripcion.textContent = info.data.product_description.substring(0)
+    // console.log(info.data.product_description)
+});
     // let {data} = res;
     // let {
         //     category_path,
@@ -116,7 +121,7 @@ minusCounter.addEventListener('click',async (e)=>{
         //     ...dataUpdate
         // } = data;
         // console.log(dataUpdate);
-    })
+})
     
     
     

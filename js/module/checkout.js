@@ -1,11 +1,15 @@
 
 export const headerCheckout = async () =>{
-    let plantilla = /*html*/`<div>
-                    <a id="back" href="detail.html${location.search}">
-                    
+    let plantilla = /*html*/`
+            <div>
+                <a id="back" href="../index.html?id='fashion">    
                     <img src="../storage/img/back.svg">
                 </a>
-            </div> `
+            </div> 
+            <div>Checkout</div>
+            <div>
+                <img src="../storage/img/sidebar.svg" alt="" srcset="">
+            </div>`
     return plantilla
 };
 

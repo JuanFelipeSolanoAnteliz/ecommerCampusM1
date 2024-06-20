@@ -47,15 +47,17 @@ let checkout__detailss = document.querySelectorAll(".details__product");
 let acumulative__price = document.querySelector("#acumulative__price");
 let sub__total = document.querySelector("#sub__total");
 
- let variable = info.length-1
+let variable = info.length-1
+
 quantityItems.textContent = `Total (${variable} items)`
+
 let precio = 0;
 
-checkout__detailss.forEach(si => {
-    let plus__checkout = si.querySelector("#plus__Checkout");
-    let counter = si.querySelector("#counter");
-    let minus__checkout =si.querySelector("#minus__checkout");
-    let priceSpan = si.querySelector("#priceSpan");
+checkout__detailss.forEach(element => {
+    let plus__checkout = element.querySelector("#plus__Checkout");
+    let counter = element.querySelector("#counter");
+    let minus__checkout =element.querySelector("#minus__checkout");
+    let priceSpan = element.querySelector("#priceSpan");
 
     precio = precio + Number((priceSpan.textContent).replace("$", ""));
     acumulative__price.textContent = precio.toFixed(2);
@@ -87,7 +89,8 @@ checkout__detailss.forEach(si => {
 });
 
 
-console.log(variable)
+
+
 //let items = si.querySelector("#items");
 
 

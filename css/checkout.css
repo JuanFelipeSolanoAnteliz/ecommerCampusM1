@@ -94,7 +94,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: var(--color-4);
+    background: linear-gradient(to right bottom, #801336, #2d132c);
     color: var(--color-5);
     width: 90px;
     height: 28px;
@@ -234,7 +234,7 @@
  
 }
 .footer__ul{
-    background: var(--color-4);
+    background: linear-gradient(to right bottom, #801336, #2d132c);
     height: 55px;
     display: flex;
     flex-direction: row;

@@ -1,7 +1,7 @@
 export const priceDetails = async({data: dataUpdate} = res) => {
     console.log(dataUpdate)
     let plantilla = "";
-        if (dataUpdate.product_price ==  null) {
+        if (dataUpdate.product_price === null) {
             plantilla +=  /*html*/
                 `<li>    
                 <a href="checkout.html?id=${dataUpdate.asin}">
@@ -12,24 +12,27 @@ export const priceDetails = async({data: dataUpdate} = res) => {
                 `
     return plantilla
 }
-    if (dataUpdate.product_original_price ==  null){
+    if (dataUpdate.product_original_price ===  null){
         plantilla += /*html*/
     `<li>    
         <a href="checkout.html?id=${dataUpdate.asin}">
             <img src="../storage/img/shopping-cart.svg">
-            <span id= "total__price">Add to Cart $${dataUpdate.product_price}</span>
+            <span id= "total__price">Add to Cart ${dataUpdate.product_price}</span>
         </a>
     </li>
     `;
     return plantilla
+    }else if(dataUpdate.product_original_price === null && dataUpdate.product_price === null){
+
     }
-    plantilla += /*html*/
+    else{plantilla += /*html*/
     `<li>    
-    <a href="checkout.html?id=${dataUpdate.asin}">
-        <img src="../storage/img/shopping-cart.svg">
-        <span id= "total__price" >Add to Cart ${dataUpdate.product_price}<del><sub>${dataUpdate.product_original_price}</sub></del></span>
-    </a>
-</li>
-`;
-return plantilla
-};
+        <a href="checkout.html?id=${dataUpdate.asin}">
+            <img src="../storage/img/shopping-cart.svg">
+            <span id= "total__price" >Add to Cart ${dataUpdate.product_price}<del><sub>${dataUpdate.product_original_price}</sub></del></span>
+        </a>
+    </li>
+    `;
+    return plantilla
+    };
+}

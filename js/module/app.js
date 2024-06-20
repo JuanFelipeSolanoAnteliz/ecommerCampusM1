@@ -26,7 +26,7 @@ export const getAllCategory = async()=>{
 }
 
 export const getAllProductRandom = async({
-    query="zapato", 
+    query="zapatos", 
     page=3000, 
     category_id="fashion",
     min_price=100, 
@@ -36,6 +36,7 @@ export const getAllProductRandom = async({
     page = Math.random()*(page/20);
     page = parseInt(Math.round(page));
     if(!page) page = 1;
+                // https://real-time-amazon-data.p.rapidapi.com/search?query=${query}&page=${page}&country=US&sort_by=RELEVANCE&product_condition=ALL
     const url = `https://real-time-amazon-data.p.rapidapi.com/search?query=${query}&page=${page}&country=US&sort_by=RELEVANCE&category_id=${category_id}&min_price=${min_price}&max_price=${max_price}&product_condition=NEW&brand=${brand.join("%2C")}`;
     const options = {
         method: 'GET',

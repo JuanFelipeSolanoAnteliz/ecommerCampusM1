@@ -39,3 +39,32 @@ export const galleryCategory = ({data: {product_photos}} = res)=>{
             </div>
         </article>`;
 }
+// import { variable } from "../checkout.js";
+let counter = sessionStorage.length-1;
+
+export const footer = async()=>{
+    return /*html*/`<ul id="footer__index" class="footer__ul">
+            <li>
+                <a href="#">
+                    <img src="../storage/img/homeSelect.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="/views/checkout.html">
+                    <img src="../storage/img/bag.svg" alt="">
+                    <span id="index__Kart__counter" >${counter}</span>
+                </a>    
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../storage/img/heart.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../storage/img/profile.svg" alt="">
+                </a>
+            </li>
+        </ul>
+    `
+}

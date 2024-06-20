@@ -47,7 +47,7 @@ let checkout__detailss = document.querySelectorAll(".details__product");
 let acumulative__price = document.querySelector("#acumulative__price");
 let sub__total = document.querySelector("#sub__total");
 
-let variable = info.length-1
+ let variable = info.length-1
 quantityItems.textContent = `Total (${variable} items)`
 let precio = 0;
 
@@ -87,16 +87,16 @@ checkout__detailss.forEach(si => {
 });
 
 
-
+console.log(variable)
 //let items = si.querySelector("#items");
 
 
 // function updateItemsLabel(count) {
 //     let itemsLabel = document.querySelector("#items");
 //     let acumulative__price = document.querySelector("#acumulative__price");
+//     }
 //     if (itemsLabel) {
 //         itemsLabel.textContent = `Total (${countData} items)`;
-//     }
 // }
 
 // const preciosxItem = async (sumaPrecios) => {

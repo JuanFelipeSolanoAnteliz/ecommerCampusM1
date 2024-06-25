@@ -53,12 +53,12 @@ export const footer = async()=>{
     return /*html*/`<ul id="footer__index" class="footer__ul">
             <li>
                 <a href="#">
-                    <img src="/storage/img/homeSelect.svg" alt="">
+                    <img src="./storage/img/homeSelect.svg" alt="">
                 </a>
             </li>
             <li>
                 <a href="/views/checkout.html">
-                    <img src="/storage/img/bag.svg" alt="">
+                    <img src="./storage/img/bag.svg" alt="">
                     <span id="index__Kart__counter" >${await replaceZero(counter)}</span>
                 </a>    
             </li>
@@ -69,7 +69,7 @@ export const footer = async()=>{
             </li>
             <li>
                 <a href="#">
-                    <img src="../storage/img/profile.svg" alt="">
+                    <img src="./storage/img/profile.svg" alt="">
                 </a>
             </li>
         </ul>
